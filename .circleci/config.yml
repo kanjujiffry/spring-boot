@@ -20,7 +20,7 @@ jobs:
       - run:
           name: Build the project and run tests
           command: |
-            mvn clean install package
+            ./gradlew build
       - run:
           name: Create AWS credentials manually
           command: |
@@ -52,7 +52,7 @@ jobs:
       - run:
           name: Build the project and run tests
           command: |
-            mvn clean install package
+            ./gradlew build
       - run:
           name: Create AWS credentials manually
           command: |
