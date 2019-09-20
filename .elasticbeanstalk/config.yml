@@ -1,0 +1,20 @@
+branch-defaults:
+  master:
+    environment: spring-boot-dev
+    group_suffix: null
+deploy:
+  artifact: build/libs/spring-boot-0.0.1.jar
+global:
+  application_name: spring-boot
+  branch: master
+  default_ec2_keyname: null
+  default_platform: Java 8
+  default_region: eu-west-1
+  include_git_submodules: true
+  instance_profile: null
+  platform_name: null
+  platform_version: null
+  profile: training
+  repository: null
+  sc: git
+  workspace_type: Application
