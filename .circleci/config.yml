@@ -16,7 +16,6 @@ jobs:
           command: |
             sudo apt-get install -y libpython-dev
             mvn --version
-            java --version
             sudo pip install awsebcli --upgrade
       - run:
           name: Build the project and run tests
