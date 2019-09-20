@@ -20,8 +20,8 @@ jobs:
       - run:
           name: Build the project and run tests
           command: |
-            echo "JAVa HOME"
-            echo $JAVA_HOME
+            ls
+            pwd
             mvn clean install package
       - run:
           name: Create AWS credentials manually
@@ -40,7 +40,7 @@ jobs:
           name: Confirm proudction deployment
           command: |
             echo "Production deployment approved"
-
+ls
   deploy-to-production:
     executor: my-executor
     steps:
