@@ -3,7 +3,7 @@ branch-defaults:
     environment: spring-boot-dev
     group_suffix: null
 deploy:
-  artifact: build/libs/spring-boot-0.0.1.jar
+  artifact: build/libs/spring-boot-0.1.0.jar
 global:
   application_name: spring-boot
   branch: master

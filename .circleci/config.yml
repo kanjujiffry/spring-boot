@@ -33,8 +33,8 @@ jobs:
       - run:
           name: Deploy to Dev
           command: |
-            eb use spring-boot-dev --profile eb-cli --region eu-west-1
-            eb deploy -v --staged --profile eb-cli --region eu-west-1
+            eb use spring-boot-dev --profile eb-cli
+            eb deploy -v --staged --profile eb-cli
   confirm-production-deployment:
     executor: my-executor
     steps:
@@ -69,8 +69,8 @@ jobs:
       - run:
           name: Deploy to Production
           command: |
-            eb use spring-boot-dev --profile eb-cli --region eu-west-1
-            eb deploy -v --staged --profile eb-cli --region eu-west-1
+            eb use spring-boot-dev --profile eb-cli
+            eb deploy -v --staged --profile eb-cli
 workflows:
   version: 2
   build-deploy:
