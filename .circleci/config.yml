@@ -14,15 +14,14 @@ jobs:
       - run:
           name: Install awscli
           command: |
-            sudo apt-get install -y libpython-dev
-            mvn --version
             sudo apt-get install python-setuptools
+            sudo easy_install pip
             sudo pip install awsebcli --upgrade
       - run:
           name: Build the project and run tests
           command: |
-            mvn --version
-            java --version
+            echo "JAVa HOME"
+            echo $JAVA_HOME
             mvn clean install package
       - run:
           name: Create AWS credentials manually
