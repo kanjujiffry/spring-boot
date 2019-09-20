@@ -22,6 +22,8 @@ jobs:
           command: |
             ls
             pwd
+            cd initial
+            ls
             mvn clean install package
       - run:
           name: Create AWS credentials manually
@@ -40,7 +42,7 @@ jobs:
           name: Confirm proudction deployment
           command: |
             echo "Production deployment approved"
-ls
+
   deploy-to-production:
     executor: my-executor
     steps:
